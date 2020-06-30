@@ -168,5 +168,8 @@ bool is_batchnorm3d_module(
     const Match& match,
     const std::unordered_map<std::string, Value*>& vmap);
 
+bool is_fp16_fp32_cast_op(
+    const Match& match,
+    const std::unordered_map<std::string, Value*>& vmap);
 } // namespace jit
 } // namespace torch
